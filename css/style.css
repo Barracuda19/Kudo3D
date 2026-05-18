@@ -318,12 +318,12 @@ nav{
 
 /* GALLERY */
 
-.gallery{
-  columns:3 260px;
-
-  column-gap:18px;
-
-  margin-top:40px;
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  padding: 20px;
+  justify-items: center;
 }
 
 .gallery-item{
