@@ -147,13 +147,18 @@ nav{
 
 .video-card{
   aspect-ratio:9 / 16;
+
   width:100%;
-  max-width:520px;
-  height:85vh;
+  max-width:480px;
+
+  height:auto;
+
   border-radius:28px;
+
   overflow:hidden;
+
   background:#000;
-  position:relative;
+
   box-shadow:0 20px 60px rgba(0,0,0,0.45);
 }
 
@@ -219,9 +224,12 @@ footer{
     grid-template-columns:1fr;
   }
 
-  .gallery{
-    grid-template-columns:1fr;
-  }
+ .gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:24px;
+  justify-items:center;
+}
 
   .video-card{
     max-width:420px;
